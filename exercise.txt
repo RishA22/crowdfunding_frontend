@@ -1,0 +1,34 @@
+1. JavaScript Basics
+Start with the core JavaScript concepts before moving to React:
+
+javascript_basics_part_1
+javascript_basics_part_2
+2. Understanding Async Programming
+Learn how JavaScript handles asynchronous operations: 
+3. async_and_fetch
+4. fetch_and_post
+
+3. Setting Up Your Environment
+Get your development environment ready: 5. installing_node
+
+4. Building React Fundamentals
+Get introduced to React and start creating basic apps: 6. crowdfunding_frontend_setup
+7. react_simple_message
+8. building_a_counter
+9. building_a_todo_list
+10. building_a_shopping_list
+11. react_todo_list
+
+5. Managing State and User Interaction
+Explore how to handle state and user authentication in React: 12. login_state
+
+6. Advanced React Concepts
+Dive into React's more powerful features: 13. react_router
+
+7. Planning and Building Projects
+Learn how to think about larger applications: 14. project_spec (Understand the project requirements before building something complex.)
+15. crowdfunding_frontend_setup (Now fully implement the crowdfunding app.)
+
+8. Deploying Your React App
+Finish by learning how to make your app live: 16. deploying_a_react_app
+

@@ -1,0 +1,47 @@
+JavaScript: A programming language used to make websites interactive (e.g., buttons, forms).
+Frontend: The part of the app that users see and interact with, like buttons and text on a website.
+React: A tool (library) that helps build user interfaces with reusable components.
+Vite: A tool that quickly sets up projects and provides a fast development experience.
+Template: A starting structure for your project, so you don’t have to build everything from scratch.
+Component: A piece of UI that React can render (e.g., a button or a page).
+State: Data that can change over time, causing a component to re-render.
+Props: Data passed to a component that can influence what it renders.
+DOM: The structure of your webpage, which React manipulates when rendering.
+
+
+Why Are Routes Important?
+Navigation: Allows users to visit different parts of your app by typing URLs or clicking links.
+Single-Page Applications (SPAs): In React, routes help create SPAs where navigation happens without reloading the page.
+Dynamic Data: Routes let you display specific content based on URL parameters, like user profiles or product details.
+
+Example in Action
+Imagine a website with two pages:
+
+Home Page (/)
+About Page (/about)
+When you navigate to:
+
+/: The browser shows the HomePage.
+/about: The browser shows the AboutPage.
+This is all powered by routes.
+
+-Parameters in .map():
+
+Most common: (element, index).
+Optional: (element, index, array).
+
+-React Naming Conventions
+React has specific naming styles to make your codebase organized and easily understandable:
+
+Naming Style	Usage	Example
+
+PascalCase	React components (capitalized to signify their importance)	NavBar.jsx, ProjectCard.jsx
+
+kebab-case	Non-component files (utility functions, styles, data, etc.)	project-card.css, data.js
+
+camelCase	Variables, functions, or helper methods	fetchData.js, renderList()
+
+-Async functions 
+let your program keep running while waiting for long tasks, like downloading files or requesting data.
+With async and await, we can pause and wait for tasks to finish in a way that doesn't stop everything else.
+Async functions help make programs more efficient, responsive, and user-friendly.
