@@ -5,9 +5,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
+import SignupPage from "./pages/SignupPage.jsx";
 
 import NavBar from "./components/NavBar.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx";
+import CreateprojectPage from "./pages/CreateprojectPage.jsx";
+import CreatepledgePage from "./pages/CreatepledgePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,10 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> }, // When URL is "/", show HomePage
       { path: "/login", element: <LoginPage /> },
       { path: "/project/:id", element: <ProjectPage /> },
+      { path: "/signup", element: <SignupPage /> },
+      { path: "/createproject", element: <CreateprojectPage /> },
+      { path: "/project/:id/createpledge", element: <CreatepledgePage /> }
+
     ],
   },
 ]);

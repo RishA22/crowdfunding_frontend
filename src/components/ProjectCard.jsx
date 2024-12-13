@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import "./ProjectCard.css";
+// import "./ProjectCard.css";
+import "./project-card.css";
 
 function ProjectCard(props) {
     const { projectData } = props;
@@ -8,11 +9,14 @@ function ProjectCard(props) {
 
     return (
         <div className="project-card">
+            <img src={projectData.image} alt={projectData.project_name} />
+            <h1>{projectData.project_name}</h1>
+            {/* <h3>{projectData.description}</h3> */}
             <Link to={projectLink}>
-                <img src={projectData.image} />
-                <h3>{projectData.project_name}</h3>
+                <button type="button">Learn More</button>
             </Link>
-        </div>
+
+        </div >
     );
 }
 

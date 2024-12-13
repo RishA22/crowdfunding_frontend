@@ -1,0 +1,91 @@
+/* project-card.css */
+.project-card {
+    background-color: #fff;
+    /* White background for the card */
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
+    overflow: hidden;
+    /* Hide any overflow */
+    width: 80%;
+    /* Make card take 80% of the screen width */
+    max-width: 125rem;
+    /* Maximum width */
+    margin: 20px auto;
+    /* Center the card and add space between cards */
+    text-align: center;
+    /* Center-align all content inside the card */
+    padding: 10px;
+    /* Add padding around the card content */
+}
+
+.project-card img {
+    width: 100%;
+    /* Make image take full width of card */
+    max-width: 500px;
+    /* Limit the maximum width of the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 10px auto;
+    /* Add margin for spacing */
+    padding: 10px;
+    /* Padding around the image (top, left, and right) */
+    display: block;
+    /* Center image within card */
+    border-radius: 10px;
+    /* Add slight rounding for better aesthetics */
+    /* border: 1px solid #ccc; */
+    /* Optional border around the image */
+}
+
+.project-card h1 {
+    font-size: 1.5rem;
+    /* Larger font size for the title */
+    color: #333;
+    /* Darker text color */
+    margin: 10px 0;
+    /* Space above and below the title */
+    padding: 5px;
+    /* Add slight padding */
+    text-align: center;
+    /* Center-align the title */
+}
+
+/* .project-card h3 {
+    font-size: 1rem; */
+/* Font size for description */
+/* color: #666; */
+/* Subtle gray color for description */
+/* margin: 10px 0; */
+/* Space above and below the description */
+/* padding: 5px 10px; */
+/* Add padding for spacing */
+/* text-align: justify; */
+/* Center-align the description */
+/* } */
+
+.project-card a {
+    text-decoration: none;
+    /* Removes the underline */
+}
+
+.project-card button {
+    display: block;
+    max-width: 20%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f63b3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-card button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}

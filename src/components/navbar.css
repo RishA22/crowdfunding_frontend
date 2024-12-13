@@ -1,0 +1,65 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Align logo to the left and links to the right */
+    align-items: center;
+    padding: 0px 100px;
+    /* Add more padding to increase navbar height */
+    background-color: white;
+    /* Navbar background */
+    color: white;
+    height: 180px;
+    /* Increased height of navbar */
+}
+
+nav .logo img {
+    width: 280px;
+    /* Bigger logo size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: rgb(56, 54, 54);
+    font-size: 1rem;
+    margin-left: 15px;
+    /* Less space between links */
+}
+
+nav .nav-links a:hover {
+    color: #0056b3;
+    /* Hover effect on links */
+}
+
+/* Styles for the logout message */
+.logout-message {
+    background-color: #f0f8ff;
+    /* Light blue background */
+    color: #2f2f30;
+    /* Dark blue text */
+    padding: 10px 20px;
+    /* Padding for spacing */
+    border: 1px solid #1f2020;
+    /* Border to match text color */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin: 15px auto;
+    /* Center and add spacing */
+    text-align: center;
+    /* Center the text */
+    max-width: 500px;
+    /* Limit the width */
+    font-size: 1rem;
+    /* Adjust font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: opacity 0.5s ease;
+    /* Smooth fade-out */
+    opacity: 1;
+}

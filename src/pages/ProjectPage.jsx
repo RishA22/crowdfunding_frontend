@@ -1,5 +1,6 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import useProject from "../hooks/use-project";
+import "./ProjectPage.css"; // Import CSS here
 
 function ProjectPage() {
     // Here we use a hook that comes for free in react router called `useParams` to get the id from the URL so that we can pass it to our useProject hook.
@@ -8,30 +9,74 @@ function ProjectPage() {
     const { project, isLoading, error } = useProject(id);
 
     if (isLoading) {
-        return (<p>loading...</p>)
+        return (
+            <div className="spinner" />
+        );
     }
 
     if (error) {
-        return (<p>{error.message}</p>)
+        return (
+            <div className="error-message">
+                <p>{error.message}</p>
+                <Link to="/">Go Back to Home</Link>
+            </div>
+        );
     }
 
+    // Format the created_at date to a human-readable format
+    const formattedDate = new Date(project.create_date).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+    });
+
+    // Calculate the total sum of pledge amounts and the number of pledges
+    const totalAmount = project.pledges.reduce((sum, pledge) => sum + pledge.amount, 0);
+    const numberOfPledges = project.pledges.length;
+
+
     return (
-        <div>
-            <h2>{project.title}</h2>
-            <h3>Created at: {project.date_created}</h3>
-            <h3>{`Status: ${project.is_open}`}</h3>
-            <h3>Pledges:</h3>
-            <ul>
-                {project.pledges.map((pledgeData, key) => {
-                    return (
-                        <li key={key}>
-                            {pledgeData.amount} from {pledgeData.supporter}
-                        </li>
-                    );
-                })}
-            </ul>
+        <div className="project-page">
+            <div className="project-header">
+                {/* Picture Section */}
+                <div className="project-image">
+                    <img src={project.image || "/default-image.jpg"} alt={project.project_name} />
+                </div>
+                {/* Name */}
+                <div className="project-info"><h1>{project.project_name}</h1></div>
+
+                {/* Metadata Section */}
+                <div className="project-metadata">
+                    <p><strong>Created at:</strong> {formattedDate}</p>
+                    <p><strong>Goal:</strong> ${project.goal}</p>
+                    <p><strong>Status:</strong> {project.is_open ? "Open to pledges" : "Closed"}</p>
+                    <p><strong>Pledges:</strong> ${totalAmount} from {numberOfPledges}</p>
+
+                    <Link to={`/project/${project.id}/createpledge`}>Create Pledge</Link>
+
+                </div>
+
+
+                {/* Pledges Section */}
+                {/* <div className="project-pledges">
+                    <h3>Pledges:</h3>
+                    <ul>
+                        {project.pledges.map((pledgeData, key) => {
+                            return (
+                                <li key={key}>
+                                    {pledgeData.amount} from {pledgeData.supporter}
+                                </li>
+                            );
+                        })}
+                    </ul>
+                    <Link to={`/project/${project.id}/createpledge`}>Create Pledge</Link>
+                </div> */}
+
+                {/* Description */}
+                <h2>{project.description}</h2>
+            </div >
         </div>
     );
-}
 
-export default ProjectPage
+}
+export default ProjectPage;

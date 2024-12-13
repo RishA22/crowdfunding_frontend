@@ -1,0 +1,150 @@
+.project-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    /* Centers both the image and text horizontally */
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-info {
+    text-align: center;
+    /* Ensures the text below the image is centered */
+    /* border: 1px solid #f63b3b; */
+}
+
+.project-info h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    /* Add some spacing between the image and the text */
+    margin-bottom: 1px;
+}
+
+.project-header h2 {
+    font-size: 1rem;
+    /* Smaller, paragraph-like font size */
+    font-weight: normal;
+    /* Makes the text look like a regular paragraph */
+    margin: 1px 0;
+    /* Adds vertical space (top and bottom) */
+    padding: 0 85px;
+    /* Adds horizontal spacing inside the block */
+    text-align: justify;
+    /* Justifies the text */
+    line-height: 1.5;
+    /* Improves readability */
+    color: #333;
+    /* Optional: Adjust color for better readability */
+}
+
+.project-metadata {
+    margin: 1px 0;
+    /* Add spacing above and below the metadata */
+    font-size: 1rem;
+    /* Standard font size */
+    color: #555;
+    /* Subtle color for metadata */
+    line-height: 1.5;
+    /* Improves readability */
+    /* border: 1px solid #f63b3b; */
+    /* Red border with 1px width and solid style */
+    padding: 10px;
+    /* Adds inner spacing within the border */
+    border-radius: 5px;
+    /* Adds rounded corners to the border */
+    text-align: center;
+    /* Ensures child elements are centered */
+}
+
+.project-metadata p {
+    margin: 5px 0;
+    /* Add spacing between individual lines */
+}
+
+.project-metadata strong {
+    font-weight: bold;
+    /* Highlight field labels */
+}
+
+.project-metadata a {
+    display: inline-block;
+    /* Keeps the button styled like a block but inline for centering */
+    margin: 10px auto;
+    /* Centers the button horizontally */
+    padding: 10px 20px;
+    /* Adjust padding for size */
+    background-color: #f63b3b;
+    /* Red background color */
+    color: white;
+    /* White text color */
+    text-decoration: none;
+    /* Removes underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+    text-align: center;
+    /* Centers the text inside the button */
+    width: 60%;
+    /* Adjust button width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for 3D effect */
+}
+
+.project-metadata a:hover {
+    background-color: #0056b3;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.spinner::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #007bff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.error-message a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.error-message a:hover {
+    text-decoration: underline;
+}

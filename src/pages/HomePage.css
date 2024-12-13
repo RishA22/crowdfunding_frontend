@@ -1,6 +1,132 @@
-#project-list {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 10px;
-    row-gap: 10px;
+/* HomePage.css */
+
+
+#hero {
+    text-align: center;
+    padding: 4px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 98%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.show-projects-btn {
+    display: block;
+    max-width: 13%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f63b3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-projects-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Add this CSS to your HomePage.css or navbar.css */
+/* Feedback form spacing */
+.feedback-section {
+    margin-bottom: 50px;
+    /* Add space between the feedback form and footer */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #cfcccc;
+    /* Grey background */
+    color: rgb(62, 61, 61);
+    text-align: center;
+    padding: 10px 20px 50px;
+    /* Top padding reduced, bottom padding increased */
+    margin-top: 50px;
+    /* Space from content above the footer */
+    border-top: 2px solid black;
+    /* Black line on top */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.0rem;
+    /* Footer text size */
+    line-height: 1.5;
+    /* Slightly increase line spacing for better readability */
+}
+
+#animated-word {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    color: #f63b3b;
+    transform: translateX(20px);
+    /* Start slightly to the right */
+    animation: letterAnimation 0.5s forwards;
+}
+
+.letter:nth-child(1) {
+    animation-delay: 0s;
+    /* First letter starts immediately */
+}
+
+.letter:nth-child(2) {
+    animation-delay: 0.2s;
+    /* Second letter starts after 0.2s */
+}
+
+.letter:nth-child(3) {
+    animation-delay: 0.4s;
+    /* Third letter starts after 0.4s */
+}
+
+.letter:nth-child(4) {
+    animation-delay: 0.6s;
+    /* Fourth letter starts after 0.6s */
+}
+
+.letter:nth-child(5) {
+    animation-delay: 0.8s;
+    /* Fifth letter starts after 0.8s */
+}
+
+.letter:nth-child(6) {
+    animation-delay: 1s;
+    /* Sixth letter starts after 1s */
+}
+
+@keyframes letterAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+        /* Start slightly to the right */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* End in the correct position */
+    }
 }

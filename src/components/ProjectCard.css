@@ -1,11 +1,17 @@
 .project-card {
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 10px;
     box-shadow: 0px 0px 5px gray;
 }
 
 .project-card img {
     width: 100%;
-    height: 300px;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 300px;
+    /* Limit max height to make images uniform */
     object-fit: cover;
+    /* Cover entire image container */
 }
