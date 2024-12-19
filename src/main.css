@@ -1,0 +1,21 @@
+/* Footer styles */
+.footer {
+    background-color: #cfcccc;
+    /* Grey background */
+    color: rgb(62, 61, 61);
+    text-align: center;
+    padding: 10px 20px 50px;
+    /* Top padding reduced, bottom padding increased */
+    margin-top: 50px;
+    /* Space from content above the footer */
+    border-top: 2px solid black;
+    /* Black line on top */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.0rem;
+    /* Footer text size */
+    line-height: 1.5;
+    /* Slightly increase line spacing for better readability */
+}

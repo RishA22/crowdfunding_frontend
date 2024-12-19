@@ -68,9 +68,11 @@ button:hover {
     display: flex;
     align-items: center;
     color: red;
+    background-color: #fff;
     font-size: 14px;
-    margin-top: -5px;
-    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-color: #fff;
 }
 
 /* Tooltip Icon Styles */
@@ -99,7 +101,8 @@ button:hover {
     /* Adjust to position the tooltip below the question mark */
     left: 0;
     /* Align tooltip with the question mark icon */
-    background-color: #fff;
+    color: black;
+    background-color: #f4efef;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 4px;
@@ -128,4 +131,20 @@ button:hover {
     label {
         font-size: 14px;
     }
+}
+
+.top-extra {
+    margin: 24px;
+}
+
+.extra-div {
+    margin: 24px;
+}
+
+.empty-div {
+    margin: 10px;
+}
+
+.empty-div1 {
+    margin: 17px;
 }

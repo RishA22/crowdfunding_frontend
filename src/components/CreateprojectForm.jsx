@@ -84,24 +84,6 @@ function CreateprojectForm() {
                 />
             </div>
 
-            {/* <div>
-                <label htmlFor="create_date">Create Date:</label>
-                <input
-                    type="text"
-                    id="create_date"
-                    placeholder="create_date"
-                    onChange={handleChange}
-                />
-            </div>
-            <div>
-                <label htmlFor="End Date">End Date:</label>
-                <input
-                    type="date"
-                    id="end_date"
-                    placeholder="End date"
-                    onChange={handleChange}
-                />
-            </div> */}
             <button type="submit">
                 Create
             </button>

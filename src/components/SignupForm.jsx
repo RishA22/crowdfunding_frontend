@@ -13,7 +13,7 @@ function SignupForm() {
         password: "",
         email: "",
     });
-    //implementation for username and password
+
     const [errors, setErrors] = useState({});
     const [showTooltip, setShowTooltip] = useState(null);
 
@@ -26,8 +26,6 @@ function SignupForm() {
     const validatePassword = (password) => {
         return password.length >= 6; // At least 6 characters
     };
-
-    //implementation for username and password
 
     const handleChange = (event) => {
         const { id, value } = event.target;
@@ -54,7 +52,6 @@ function SignupForm() {
 
         setErrors({}); // Clear errors if inputs are valid
 
-        //implementation for username and password
 
         if (credentials.username && credentials.password && credentials.email) {
             postSignup(
@@ -96,9 +93,9 @@ function SignupForm() {
                                     className="tooltip-text"
                                 >
                                     <p>
-                                        - Starts with a letter<br />
-                                        - Can include letters, numbers, underscores (`_`), periods (`.`), or hyphens (`-`)<br />
-                                        - Length: 3–30 characters
+                                        Starts with a letter<br />
+                                        Can include letters, numbers, underscores (`_`), periods (`.`), or hyphens (`-`)<br />
+                                        Length: 3–30 characters
                                     </p>
                                 </div>
                             )}

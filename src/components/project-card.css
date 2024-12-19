@@ -37,8 +37,6 @@
     /* Center image within card */
     border-radius: 10px;
     /* Add slight rounding for better aesthetics */
-    /* border: 1px solid #ccc; */
-    /* Optional border around the image */
 }
 
 .project-card h1 {
@@ -53,19 +51,6 @@
     text-align: center;
     /* Center-align the title */
 }
-
-/* .project-card h3 {
-    font-size: 1rem; */
-/* Font size for description */
-/* color: #666; */
-/* Subtle gray color for description */
-/* margin: 10px 0; */
-/* Space above and below the description */
-/* padding: 5px 10px; */
-/* Add padding for spacing */
-/* text-align: justify; */
-/* Center-align the description */
-/* } */
 
 .project-card a {
     text-decoration: none;

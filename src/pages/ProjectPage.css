@@ -17,7 +17,6 @@
 .project-info {
     text-align: center;
     /* Ensures the text below the image is centered */
-    /* border: 1px solid #f63b3b; */
 }
 
 .project-info h1 {
@@ -53,8 +52,6 @@
     /* Subtle color for metadata */
     line-height: 1.5;
     /* Improves readability */
-    /* border: 1px solid #f63b3b; */
-    /* Red border with 1px width and solid style */
     padding: 10px;
     /* Adds inner spacing within the border */
     border-radius: 5px;

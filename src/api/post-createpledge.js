@@ -1,6 +1,4 @@
 async function postCreatepledge(amount, comment, anonymous, project, token) {
-    // const createDate = new Date().toISOString();
-    // const endDate = new Date().toISOString() + 10
 
     const url = `${import.meta.env.VITE_API_URL}/pledges/`;
     const response = await fetch(url, {

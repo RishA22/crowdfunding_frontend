@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx";
 import CreateprojectPage from "./pages/CreateprojectPage.jsx";
 import CreatepledgePage from "./pages/CreatepledgePage.jsx";
+import "./main.css";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     This wraps your entire app and connects it to the router */}
     <AuthProvider>
       <RouterProvider router={router} />
+      <footer className="footer">
+        <p>&copy; 2024 UpliftU. All Rights Reserved.</p>
+      </footer>
     </AuthProvider>
 
   </React.StrictMode>

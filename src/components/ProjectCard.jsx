@@ -11,7 +11,6 @@ function ProjectCard(props) {
         <div className="project-card">
             <img src={projectData.image} alt={projectData.project_name} />
             <h1>{projectData.project_name}</h1>
-            {/* <h3>{projectData.description}</h3> */}
             <Link to={projectLink}>
                 <button type="button">Learn More</button>
             </Link>

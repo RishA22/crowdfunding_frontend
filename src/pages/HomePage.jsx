@@ -1,13 +1,12 @@
 import useProjects from "../hooks/use-projects";
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import FeedbackForm from "../components/FeedbackForm"; // Import the feedback form component
+import FeedbackForm from "../components/FeedbackForm";
 import "./HomePage.css";
 import hero_image from "../assets/hero_image.png";
 
 function HomePage() {
     const { projects } = useProjects();
-    // console.log(projects)
     const [showProjects, setShowProjects] = useState(false); // State to toggle projects visibility
 
     const handleShowProjects = () => {
@@ -51,9 +50,6 @@ function HomePage() {
             {/* Feedback Form (Always Visible) */}
             <FeedbackForm />
 
-            <footer className="footer">
-                <p>&copy; 2024 UpliftU. All Rights Reserved.</p>
-            </footer>
         </div>
     );
 }

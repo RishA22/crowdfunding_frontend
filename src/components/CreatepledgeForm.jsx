@@ -60,6 +60,7 @@ function CreatepledgeForm() {
                     value={credentials.comment}
                 />
             </div>
+            <div className="empty-div"></div>
 
             <div>
                 <label htmlFor="anonymous">
@@ -72,6 +73,7 @@ function CreatepledgeForm() {
                     Pledge Anonymously
                 </label>
             </div>
+            <div className="empty-div"></div>
 
             <button type="submit">
                 Create

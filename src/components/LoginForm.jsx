@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import postLogin from "../api/post-login.js";
 import { useAuth } from "../hooks/use-auth.js";
+import './formStyles.css';
 
 function LoginForm() {
     const navigate = useNavigate();
@@ -33,11 +34,17 @@ function LoginForm() {
                 });
                 navigate("/");
 
-            });
+            })
+                .catch((error) => {
+                    alert(error.message)
+                })
         }
     };
     return (
         <form>
+            <div className="top-extra">
+
+            </div>
             <div>
                 <label htmlFor="username">Username:</label>
                 <input
@@ -56,10 +63,15 @@ function LoginForm() {
                     onChange={handleChange}
                 />
             </div>
+
             <button type="submit" onClick={handleSubmit}>
                 Login
             </button>
+            <div className="extra-div">
+
+            </div>
         </form>
+
     );
 }
 

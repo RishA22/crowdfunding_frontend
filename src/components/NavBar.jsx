@@ -49,6 +49,7 @@ function NavBar() {
             </nav >
             {/* Show the logout message if it exists  */}
             {logoutMessage && <div className="logout-message">{logoutMessage}</div>}
+
             <Outlet />
         </div >
     );
